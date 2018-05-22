@@ -1,0 +1,40 @@
+.presentation {
+  margin-top: 11em;
+}
+
+.my-photo {
+  margin: .7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.my-photo__item {
+  border: 20px solid #EFEFF2;
+  margin-bottom: 2em;
+}
+
+.bio {
+  color: $black;
+}
+
+.bio__title {
+  margin-bottom: 0;
+  padding: 0;
+  text-align: left;
+}
+.bio__subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+  margin-top: 0;
+  color: $black-light;
+}
+
+.bio__description {
+  color: $black-mid;
+  font-family: 'Mada', sans-serif;
+  font-size: 1.7em;
+  letter-spacing: .3px;
+  line-height: 1.4;
+}

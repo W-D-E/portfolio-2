@@ -1,0 +1,168 @@
+
+.jumbo {
+  margin: 0 auto;
+  width:100vw;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 23, 43, 0.45),
+      rgba(0, 23, 43, 0.45)
+    ), url('/imgs/clouds.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  font-size: 1.4em;
+  padding-top: .5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.logo {
+  position: absolute;
+  left:10vw;
+  top:27px;
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+  color: white;
+  opacity: .9;
+
+}
+
+.burger {
+  position: absolute;
+  left: 79.5vw;
+  top:46px;
+  height: 20.2px;
+  background: red;
+  opacity: 0;
+  z-index: 2;
+  width: 2.5em;
+  padding: .4em;
+  cursor: pointer;
+}
+
+.burger-1 {
+  position: absolute;
+  left: 85.2vw;
+  top:60px;
+  height: 4.2px;
+  background: white;
+  z-index: 1;
+  width: 1.1em;
+}
+
+.burger-1-top {
+  position: absolute;
+  left: 85.2vw;
+  top:52px;
+  width: 12px;
+  height: 4.2px;
+  background: white;
+
+  z-index: 1;
+}
+
+.burger-1-bottom {
+  position: absolute;
+  left: 85.2vw;
+  top: 68px;
+  width: 12px;
+  height: 4.2px;
+  background: white;
+
+  z-index: 1;
+}
+
+.burger-2 {
+  position: absolute;
+  left: 81.8vw;
+  top:60px;
+  width: 12px;
+  height: 4.2px;
+  background: white;
+
+  z-index: 1;
+
+}
+
+.burger-2-top {
+  position: absolute;
+  left: 81.8vw;
+  top:52px;
+  width: 12px;
+  height: 4.2px;
+  background: white;
+
+  z-index: 1;
+}
+
+.burger-2-bottom {
+  position: absolute;
+  left: 81.8vw;
+  top: 68px;
+  width: 12px;
+  height: 4.2px;
+  background: white;
+
+  z-index: 1;
+}
+
+.navigation {
+
+  display: none;
+  width: 100%;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation__item {
+
+  color: skyblue;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.navigation__menu {
+  position: absolute;
+  width: 95vw;
+  opacity: 0;
+  height: 0vh;
+  background: white;
+  top: 19vh;
+  left: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigation__menu-item {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: $black;
+  padding: 1em 30vw;
+}
+
+.bienvenue {
+  text-align: center;
+  padding-top: 10em;
+}
+.bienvenue__titre {
+  font-family: 'Prompt', sans-serif;
+  font-weight: bold;
+  color: #ffde76;
+  font-size: 3.5em;
+  padding-top: 1.5em;
+  letter-spacing: 1px;
+}
+
+.bienvenue__screen {
+
+}

@@ -1,0 +1,18 @@
+.footer {
+  height: 9em;
+  width: auto;
+  background: $deepBlue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .1em;
+}
+
+.footer__item {
+  text-align: center;
+  color: $lightBlue;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  letter-spacing: .3px;
+  line-height: 1.4;
+}

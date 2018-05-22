@@ -1,0 +1,22 @@
+
+div { header + gros titre }
+
+div {photo + présentation}
+
+div { Project }
+
+div {technologies tableau }
+
+div { formulaire de contact}
+
+div { footer }
+
+
+git
+
+favicon
+liens
+smooth scrolling
+vue adaptative
+lazy loading
+button  fix
