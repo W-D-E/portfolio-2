@@ -7,17 +7,46 @@
   align-items: center;
   justify-content: center;
   z-index: 0;
+
+}
+
+.projets__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include md {
+
+
+  }
 }
 
 .projets__item {
   display: flex;
   margin-bottom: 4em;
-  max-width: 40em;
-  width: 87vw;
-  height: 32em;
+  margin-left: 3em;
+  width:75vw;
+  height: 30em;
   z-index: 1;
   justify-content: center;
   align-items: center;
+
+  @include sm{
+    height: 43em;
+  };
+
+  @include md {
+
+    width: 55em;
+    height: 50em;
+  }
+
+  @include lg {
+
+    width: 36em;
+    height: 33em;
+  }
 }
 
 // .projets__img {
@@ -60,7 +89,8 @@
 
 .projets__modal-title {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.9em;
+  letter-spacing: 1px;
   transform: translateY(-15px);
   color: $black-mid;
   transition: all .3s ease-out;

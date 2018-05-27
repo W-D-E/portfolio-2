@@ -1,5 +1,17 @@
 .presentation {
   margin-top: 11em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  @include lg {
+    max-width: 82vw;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .my-photo {
@@ -13,16 +25,29 @@
 .my-photo__item {
   border: 20px solid #EFEFF2;
   margin-bottom: 2em;
+  width: 65vw;
+
+
+    @include lg {
+      width: auto;
+
+    }
 }
 
 .bio {
   color: $black;
+  margin-left: 3em;
+
 }
 
 .bio__title {
   margin-bottom: 0;
   padding: 0;
   text-align: left;
+
+  @include lg {
+    margin-top: 0;
+  }
 }
 .bio__subtitle {
   font-family: 'Raleway', sans-serif;
@@ -37,4 +62,20 @@
   font-size: 1.7em;
   letter-spacing: .3px;
   line-height: 1.4;
+
+  @include sm {
+    font-size: 1.6em;
+  }
+
+  @include md {
+    font-size: 1.7em;
+  }
+
+  @include lg {
+    font-size: 1.8em;
+  }
+}
+
+.bio__name {
+  font-weight: 600;
 }

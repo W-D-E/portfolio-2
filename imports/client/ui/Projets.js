@@ -8,13 +8,14 @@ export default class Projets extends React.Component {
       super(props);
     }
 
-    renderImage(url, name, key) {
+    renderImage(url, name, key, link) {
         return (
-                  <div className="projets__item" style={{background: 'url(' + window.location.origin + url + ')', backgroundSize: 'cover'}}>
+                  <div key={key} className="projets__item" style={{background: 'url(' + window.location.origin + url + ')', backgroundSize: 'cover'}}>
                     {/* <img key={key} className="projets__img" src={window.location.origin + url} alt={name} /> */}
                     <div className="projets__modal">
                       <p className="projets__modal-title">{name}</p>
-                      <i className="fas fa-link projets__modal-icon"></i>
+                      <a href={link} target="_blank"><i className="fas fa-link projets__modal-icon"></i></a>
+
                     </div>
                   </div>
 
@@ -24,10 +25,14 @@ export default class Projets extends React.Component {
     render () {
         return (
           <div className="wrapper projets">
-            <h2 className="title">Projets</h2>
-            {Links.map((imgs) => {
-              return this.renderImage(imgs.url, imgs.name, imgs.key);
-            })}
+            <h2 id="creations" className="title">Projets</h2>
+
+            <div className="projets__wrap" >
+              {Links.map((imgs) => {
+                return this.renderImage(imgs.url, imgs.name, imgs.key, imgs.link);
+              })}
+            </div>
+
           </div>
 
         );

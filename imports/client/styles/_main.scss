@@ -5,9 +5,11 @@ $lightBlue: #E7F0F9;
 $veryLightBlue: lighten($lightBlue, 2%);
 $deepBlue: #1171C3;
 $off-white: darken(white, 2%);
+$success-green: #43c501;
 
 
 @import './norm';
+@import './mixins';
 
 
 html {
@@ -19,7 +21,9 @@ body {
   width: 100vw;
   padding: 0;
   margin: 0 auto;
-  background: #F8F8F9;
+  background: $off-white;
+  overflow-x: hidden;
+
 }
 
 .title {
@@ -29,6 +33,14 @@ body {
   padding-bottom: .5em;
   text-align: center;
   color: $black;
+
+  @include md {
+    font-size: 3.8em;
+  }
+
+  @include lg {
+    font-size: 4.5em;
+  }
 }
 
 @import './components/wrapper';
